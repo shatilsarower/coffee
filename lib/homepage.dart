@@ -13,20 +13,23 @@ class HomePage extends StatelessWidget {
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.home,
-              ),
-              label: 'Home'),
+            icon: Icon(
+              Icons.home,
+            ),
+            label: 'Home',
+          ),
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.favorite,
-              ),
-              label: 'Favorite'),
+            icon: Icon(
+              Icons.favorite,
+            ),
+            label: 'Favorite',
+          ),
           BottomNavigationBarItem(
-              icon: Icon(
-                Icons.notifications,
-              ),
-              label: 'Notifications'),
+            icon: Icon(
+              Icons.notifications,
+            ),
+            label: 'Notifications',
+          ),
         ],
       ),
       body: Column(
