@@ -41,13 +41,19 @@ class HomePage extends StatelessWidget {
       ),
       body: Column(
         children: const [
-          /// Find the best coffee for you
-          ///
-          ///
-          /// Search bar
-          ///
-          ///
-          /// Horizontal listview of coffee tiles
+          // Find the best coffee for you
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 25.0),
+            child: Text(
+              "Find the best Coffee for you",
+              style: TextStyle(
+                fontSize: 36,
+              ),
+            ),
+          ),
+          // Search bar
+
+          // Horizontal listview of coffee tiles
         ],
       ),
     );
