@@ -7,6 +7,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: const Icon(Icons.menu),
+        actions: const [
+          Padding(
+            padding: EdgeInsets.only(right: 20.0),
+            child: Icon(Icons.person),
+          )
+        ],
         elevation: 0,
         backgroundColor: Colors.transparent,
       ),
