@@ -36,7 +36,9 @@ class HomePage extends StatelessWidget {
         children: const [
           /// Find the best coffee for you
           ///
+          ///
           /// Search bar
+          ///
           ///
           /// Horizontal listview of coffee tiles
         ],
