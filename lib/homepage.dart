@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,7 +13,7 @@ class HomePage extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(right: 20.0),
             child: Icon(Icons.person),
-          )
+          ),
         ],
         elevation: 0,
         backgroundColor: Colors.transparent,
@@ -40,14 +41,16 @@ class HomePage extends StatelessWidget {
         ],
       ),
       body: Column(
-        children: const [
+        children: [
           // Find the best coffee for you
           Padding(
-            padding: EdgeInsets.symmetric(horizontal: 25.0),
+            padding: const EdgeInsets.symmetric(
+              horizontal: 25.0,
+            ),
             child: Text(
               "Find the best Coffee for you",
-              style: TextStyle(
-                fontSize: 36,
+              style: GoogleFonts.bebasNeue(
+                fontSize: 48,
               ),
             ),
           ),
