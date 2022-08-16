@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
             child: Text(
               "Find the best Coffee for you",
               style: GoogleFonts.almarai(
-                fontSize: 48,
+                fontSize: 40,
               ),
             ),
           ),
