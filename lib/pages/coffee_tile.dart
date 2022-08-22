@@ -10,9 +10,10 @@ class CoffeeTile extends StatelessWidget {
       child: Container(
         width: 200,
         decoration: BoxDecoration(
-          color: Colors.grey[800],
+          color: Colors.black54,
           borderRadius: BorderRadius.circular(14),
         ),
+        child: Image.asset('asstes/image/lattey.jpg'),
       ),
     );
   }
