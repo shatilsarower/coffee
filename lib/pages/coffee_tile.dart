@@ -22,20 +22,34 @@ class CoffeeTile extends StatelessWidget {
               borderRadius: BorderRadius.circular(12.0),
               child: Image.asset('asstes/image/lattey.jpg'),
             ),
+
             //Coffee Name
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: const [
-                Text(
-                  'Latte',
-                  style: TextStyle(fontSize: 20),
-                ),
-                Text(
-                  'With full cream milk',
-                  style: TextStyle(
-                    color: Colors.grey,
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 8,
+                vertical: 12.0,
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: const [
+                  Text(
+                    'Latte',
+                    style: TextStyle(fontSize: 20),
                   ),
-                ),
+                  Text(
+                    'With full cream milk',
+                    style: TextStyle(
+                      color: Colors.grey,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+
+            //Price
+            Row(
+              children: const [
+                Text('\$4.00'),
               ],
             ),
           ],
