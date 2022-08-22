@@ -47,10 +47,24 @@ class CoffeeTile extends StatelessWidget {
             ),
 
             //Price
-            Row(
-              children: const [
-                Text('\$4.00'),
-              ],
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 10.0,
+              ),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  const Text('\$4.00'),
+                  Container(
+                    padding: const EdgeInsets.all(4),
+                    decoration: BoxDecoration(
+                      color: Colors.orange,
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                    child: const Icon(Icons.add),
+                  ),
+                ],
+              ),
             ),
           ],
         ),
