@@ -83,9 +83,24 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 25,
+          ),
           // Search bar
 
           // Horizontal listview of coffee tiles
+
+          Expanded(
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                Container(
+                  width: 200,
+                  color: Colors.grey,
+                )
+              ],
+            ),
+          ),
         ],
       ),
     );
