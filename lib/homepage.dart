@@ -94,10 +94,48 @@ class HomePage extends StatelessWidget {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: [
-                Container(
-                  width: 200,
-                  color: Colors.grey,
-                )
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 200,
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 200,
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 200,
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 200,
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 200,
+                    color: Colors.grey,
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Container(
+                    width: 200,
+                    color: Colors.grey,
+                  ),
+                ),
               ],
             ),
           ),
