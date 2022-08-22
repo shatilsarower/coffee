@@ -61,6 +61,9 @@ class HomePage extends StatelessWidget {
             padding: const EdgeInsets.symmetric(
               horizontal: 25.0,
             ),
+
+            // Implement of Searchbar
+
             child: TextField(
               decoration: InputDecoration(
                 prefixIcon: const Icon(
