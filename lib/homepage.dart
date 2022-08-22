@@ -1,4 +1,5 @@
 import 'package:coffee/pages/coffee_tile.dart';
+import 'package:coffee/pages/coffee_type.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -88,15 +89,33 @@ class HomePage extends StatelessWidget {
             height: 25,
           ),
           // Search bar
-
+          // Horizontal listview of Coffee types
+          Container(
+            height: 50,
+            child: ListView(
+              scrollDirection: Axis.horizontal,
+              children: [
+                CoffeeType(
+                  coffeetype: 'Cappuccino',
+                  isSelected: true,
+                ),
+                CoffeeType(
+                  coffeetype: 'Latte',
+                  isSelected: false,
+                ),
+                CoffeeType(
+                  coffeetype: 'Black',
+                  isSelected: false,
+                ),
+              ],
+            ),
+          ),
           // Horizontal listview of coffee tiles
 
           Expanded(
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: const [
-                CoffeeTile(),
-                CoffeeTile(),
                 CoffeeTile(),
               ],
             ),

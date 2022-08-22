@@ -59,7 +59,7 @@ class CoffeeTile extends StatelessWidget {
                     padding: const EdgeInsets.all(4),
                     decoration: BoxDecoration(
                       color: Colors.orange,
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(13),
                     ),
                     child: const Icon(Icons.add),
                   ),

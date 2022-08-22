@@ -1,0 +1,25 @@
+import 'package:flutter/material.dart';
+
+class CoffeeType extends StatelessWidget {
+  final String coffeetype;
+  final bool isSelected;
+  CoffeeType({
+    required this.coffeetype,
+    required this.isSelected,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 25.0),
+      child: Text(
+        coffeetype,
+        style: TextStyle(
+          fontSize: 19,
+          fontWeight: FontWeight.bold,
+          color: isSelected ? Colors.orange : Colors.white,
+        ),
+      ),
+    );
+  }
+}
