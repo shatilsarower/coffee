@@ -54,6 +54,32 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ),
+          const SizedBox(
+            height: 25,
+          ),
+          Padding(
+            padding: const EdgeInsets.symmetric(
+              horizontal: 25.0,
+            ),
+            child: TextField(
+              decoration: InputDecoration(
+                prefixIcon: const Icon(
+                  Icons.search,
+                ),
+                hintText: 'Find your coffee..',
+                focusedBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.grey.shade600,
+                  ),
+                ),
+                enabledBorder: OutlineInputBorder(
+                  borderSide: BorderSide(
+                    color: Colors.grey.shade600,
+                  ),
+                ),
+              ),
+            ),
+          ),
           // Search bar
 
           // Horizontal listview of coffee tiles
