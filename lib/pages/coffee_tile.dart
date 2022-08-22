@@ -23,11 +23,21 @@ class CoffeeTile extends StatelessWidget {
               child: Image.asset('asstes/image/lattey.jpg'),
             ),
             //Coffee Name
-            const Text(
-              'Latte',
-              style: TextStyle(fontSize: 20),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Text(
+                  'Latte',
+                  style: TextStyle(fontSize: 20),
+                ),
+                Text(
+                  'With full cream milk',
+                  style: TextStyle(
+                    color: Colors.grey,
+                  ),
+                ),
+              ],
             ),
-            const Text('With full cream milk'),
           ],
         ),
       ),
