@@ -3,8 +3,42 @@ import 'package:coffee/pages/coffee_type.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+  // list of coffee types
+  final List coffeeTypes = [
+    //[coffee type, isSelected]
+
+    {
+      'Cappuccino',
+      true,
+    },
+    {
+      'latte',
+      false,
+    },
+    {
+      'Black',
+      false,
+    },
+    {
+      'tea',
+      false,
+    },
+  ];
+
+  // user tapped on coffee types
+  void coffeeTypeSelected(int index) {
+    setState(() {
+      coffeeTypes[index][1] = true;
+    });
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -90,24 +124,18 @@ class HomePage extends StatelessWidget {
           ),
           // Search bar
           // Horizontal listview of Coffee types
-          Container(
+          SizedBox(
             height: 50,
-            child: ListView(
-              scrollDirection: Axis.horizontal,
-              children: [
-                CoffeeType(
-                  coffeetype: 'Cappuccino',
-                  isSelected: true,
-                ),
-                CoffeeType(
-                  coffeetype: 'Latte',
-                  isSelected: false,
-                ),
-                CoffeeType(
-                  coffeetype: 'Black',
-                  isSelected: false,
-                ),
-              ],
+            child: ListView.builder(
+              itemBuilder: (context, index) {
+                return CoffeeType(
+                  coffeetype: coffeeTypes[index][0],
+                  isSelected: coffeeTypes[index][1],
+                  onTap: () {
+                    coffeeTypeSelected([index][0]);
+                  },
+                );
+              },
             ),
           ),
           // Horizontal listview of coffee tiles
