@@ -20,7 +20,7 @@ class CoffeeTile extends StatelessWidget {
             //Coffee Image
             ClipRRect(
               borderRadius: BorderRadius.circular(12.0),
-              child: Image.asset('asstes/image/lattey.jpg'),
+              child: Image.asset('asstes/image/latte.jpg'),
             ),
 
             //Coffee Name
