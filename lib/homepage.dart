@@ -132,7 +132,7 @@ class _HomePageState extends State<HomePage> {
                   coffeetype: coffeeTypes[index][0],
                   isSelected: coffeeTypes[index][1],
                   onTap: () {
-                    coffeeTypeSelected([index][0]);
+                    coffeeTypeSelected(index);
                   },
                 );
               },
