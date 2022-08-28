@@ -14,22 +14,21 @@ class _HomePageState extends State<HomePage> {
   // list of coffee types
   final List coffeeTypes = [
     //[coffee type, isSelected]
-
     {
-      'Cappuccino',
-      true,
+      "type": 'Cappuccino',
+      "isSelect": true,
     },
     {
-      'latte',
-      false,
+      "type": 'Black',
+      "isSelect": false,
     },
     {
-      'Black',
-      false,
+      "type": 'Latte',
+      "isSelect": false,
     },
     {
-      'tea',
-      false,
+      "type": 'Tea',
+      "isSelect": false,
     },
   ];
 
@@ -129,8 +128,8 @@ class _HomePageState extends State<HomePage> {
             child: ListView.builder(
               itemBuilder: (context, index) {
                 return CoffeeType(
-                  coffeetype: coffeeTypes[index][0],
-                  isSelected: coffeeTypes[index][1],
+                  coffeetype: coffeeTypes[index]["type"],
+                  isSelected: coffeeTypes[index]["isSelect"],
                   onTap: () {
                     coffeeTypeSelected(index);
                   },
