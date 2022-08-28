@@ -126,6 +126,7 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             height: 50,
             child: ListView.builder(
+              itemCount: coffeeTypes.length,
               itemBuilder: (context, index) {
                 return CoffeeType(
                   coffeetype: coffeeTypes[index]["type"],
