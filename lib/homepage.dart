@@ -20,15 +20,15 @@ class _HomePageState extends State<HomePage> {
     },
     {
       "type": 'Black',
-      "isSelect": false,
+      "isSelect": true,
     },
     {
       "type": 'Latte',
-      "isSelect": false,
+      "isSelect": true,
     },
     {
       "type": 'Tea',
-      "isSelect": false,
+      "isSelect": true,
     },
   ];
 
