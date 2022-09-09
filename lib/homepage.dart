@@ -97,7 +97,7 @@ class _HomePageState extends State<HomePage> {
               horizontal: 25.0,
             ),
 
-            // Implement of Searchbar
+            // Implementing of Searchbar
 
             child: TextField(
               decoration: InputDecoration(
