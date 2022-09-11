@@ -4,7 +4,8 @@ class CoffeeType extends StatelessWidget {
   final String coffeetype;
   final bool isSelected;
   final VoidCallback onTap;
-  CoffeeType({
+  const CoffeeType({
+    super.key,
     required this.coffeetype,
     required this.isSelected,
     required this.onTap,
