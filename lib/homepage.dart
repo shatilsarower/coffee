@@ -119,6 +119,7 @@ class _HomePageState extends State<HomePage> {
 
             child: TextField(
               decoration: InputDecoration(
+                alignLabelWithHint: true,
                 prefixIcon: const Icon(
                   Icons.search,
                 ),
@@ -162,7 +163,11 @@ class _HomePageState extends State<HomePage> {
             child: ListView(
               scrollDirection: Axis.horizontal,
               children: const [
-                CoffeeTile(),
+                CoffeeTile(
+                  coffeeImagePath: 'asstes/image/latte.jpg',
+                  coffeeName: 'Latte',
+                  coffeePrice: '4.30',
+                ),
               ],
             ),
           ),
