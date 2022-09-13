@@ -14,22 +14,35 @@ class _HomePageState extends State<HomePage> {
   // list of coffee types
   final List coffeeTypes = [
     //[coffee type, isSelected]
-    {
-      "type": 'Cappuccino',
-      "isSelect": true,
-    },
-    {
-      "type": 'Black',
-      "isSelect": true,
-    },
-    {
-      "type": 'Latte',
-      "isSelect": true,
-    },
-    {
-      "type": 'Tea',
-      "isSelect": true,
-    },
+    [
+      'Cappuccino',
+      true,
+    ],
+    [
+      'Black',
+      false,
+    ],
+    [
+      'Latte',
+      false,
+    ],
+    [
+      'Tea',
+      false,
+    ],
+
+    // {
+    //   "type": 'Black',
+    //   "isSelect": true,
+    // },
+    // {
+    //   "type": 'Latte',
+    //   "isSelect": true,
+    // },
+    // {
+    //   "type": 'Tea',
+    //   "isSelect": true,
+    // },
   ];
 
   // user tapped on coffee types
@@ -40,7 +53,6 @@ class _HomePageState extends State<HomePage> {
       for (int i = 0; i < coffeeTypes.length; i++) {
         coffeeTypes[i][1] = false;
       }
-
       coffeeTypes[index][1] = true;
     });
   }
@@ -129,7 +141,7 @@ class _HomePageState extends State<HomePage> {
           ),
           // Search bar
           // Horizontal listview of Coffee types
-          Container(
+          SizedBox(
             height: 50,
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
