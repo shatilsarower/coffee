@@ -168,6 +168,21 @@ class _HomePageState extends State<HomePage> {
                   coffeeName: 'Latte',
                   coffeePrice: '4.30',
                 ),
+                CoffeeTile(
+                  coffeeImagePath: 'asstes/image/capuchino.jpg',
+                  coffeeName: 'Cappuccino',
+                  coffeePrice: '5.00',
+                ),
+                CoffeeTile(
+                  coffeeImagePath: 'asstes/image/extressio.jpg',
+                  coffeeName: 'Espresso',
+                  coffeePrice: '2.0',
+                ),
+                CoffeeTile(
+                  coffeeImagePath: 'asstes/image/ice-tea.jpg',
+                  coffeeName: 'Ice Tea',
+                  coffeePrice: '3.56',
+                ),
               ],
             ),
           ),
