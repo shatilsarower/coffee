@@ -8,34 +8,51 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
-
 }
 
 class _HomePageState extends State<HomePage> {
   // list of coffee types
   final List coffeeTypes = [
     //[coffee type, isSelected]
-    {
-      "type": 'Cappuccino',
-      "isSelect": true,
-    },
-    {
-      "type": 'Black',
-      "isSelect": true,
-    },
-    {
-      "type": 'Latte',
-      "isSelect": true,
-    },
-    {
-      "type": 'Tea',
-      "isSelect": true,
-    },
+    [
+      'Cappuccino',
+      true,
+    ],
+    [
+      'Latte',
+      false,
+    ],
+    [
+      'Tea',
+      false,
+    ],
+    [
+      'Black',
+      false,
+    ],
+    // {
+    //   "type": 'Black',
+    //   "isSelect": false,
+    // },
+    // {
+    //   "type": 'Latte',
+    //   "isSelect": false,
+    // },
+    // {
+    //   "type": 'Tea',
+    //   "isSelect": false,
+    // },
   ];
 
   // user tapped on coffee types
   void coffeeTypeSelected(int index) {
     setState(() {
+      //this is for loop makes every selection false
+
+      for (int i = 0; i < coffeeTypes.length; i++) {
+        coffeeTypes[i][1] = false;
+      }
+
       coffeeTypes[index][1] = true;
     });
   }
@@ -127,11 +144,12 @@ class _HomePageState extends State<HomePage> {
           SizedBox(
             height: 50,
             child: ListView.builder(
+              scrollDirection: Axis.horizontal,
               itemCount: coffeeTypes.length,
               itemBuilder: (context, index) {
                 return CoffeeType(
-                  coffeetype: coffeeTypes[index]["type"],
-                  isSelected: coffeeTypes[index]["isSelect"],
+                  coffeetype: coffeeTypes[index][0],
+                  isSelected: coffeeTypes[index][1],
                   onTap: () {
                     coffeeTypeSelected(index);
                   },
