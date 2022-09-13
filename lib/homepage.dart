@@ -8,7 +8,6 @@ class HomePage extends StatefulWidget {
 
   @override
   State<HomePage> createState() => _HomePageState();
-
 }
 
 class _HomePageState extends State<HomePage> {
@@ -21,15 +20,15 @@ class _HomePageState extends State<HomePage> {
     },
     {
       "type": 'Black',
-      "isSelect": true,
+      "isSelect": false,
     },
     {
       "type": 'Latte',
-      "isSelect": true,
+      "isSelect": false,
     },
     {
       "type": 'Tea',
-      "isSelect": true,
+      "isSelect": false,
     },
   ];
 
@@ -124,9 +123,10 @@ class _HomePageState extends State<HomePage> {
           ),
           // Search bar
           // Horizontal listview of Coffee types
-          SizedBox(
+          Container(
             height: 50,
             child: ListView.builder(
+              scrollDirection: Axis.horizontal,
               itemCount: coffeeTypes.length,
               itemBuilder: (context, index) {
                 return CoffeeType(
